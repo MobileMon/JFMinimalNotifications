@@ -94,6 +94,8 @@ static CGFloat const kNotificationAccessoryPadding = 10.0f;
     _dismissalTimer                     = nil;
     _blurView                           = nil;
     _vibrancyView                       = nil;
+    
+    NSLog(@"dealloc called");
 }
 
 + (instancetype)notificationWithStyle:(JFMinimalNotificationStyle)style title:(NSString*)title subTitle:(NSString*)subTitle
@@ -234,6 +236,9 @@ static CGFloat const kNotificationAccessoryPadding = 10.0f;
             [self.delegate minimalNotificationDidDismissNotification:self];
         }
     }];
+    
+    
+    
 }
 
 - (void)configureInitialNotificationConstraintsForTopPresentation:(BOOL)topPresentation layoutIfNeeded:(BOOL)layoutIfNeeded
@@ -813,5 +818,7 @@ static CGFloat const kNotificationAccessoryPadding = 10.0f;
         self.touchHandler();
     }
 }
+
+
 
 @end

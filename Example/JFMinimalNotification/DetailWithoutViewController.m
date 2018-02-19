@@ -1,28 +1,23 @@
-//
-//  DetailViewController.m
-//  JFMinimalNotification
-//
-//  Created by Jeremy Fox on 5/1/15.
-//  Copyright (c) 2015 Jeremy Fox. All rights reserved.
-//
 
-#import "DetailViewController.h"
+
+#import "DetailWithoutViewController.h"
 #import "JFMinimalNotification.h"
 
-@interface DetailViewController ()<JFMinimalNotificationDelegate>
+
+@interface DetailWithoutViewController ()
+
 @end
 
-@implementation DetailViewController
-
+@implementation DetailWithoutViewController
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
- 
+    
     JFMinimalNotification* notification;
     notification = [JFMinimalNotification notificationWithStyle:JFMinimalNotificationStyleSuccess title:@"Testing" subTitle:@"Testing 1 2 3" dismissalDelay:2.0];
     notification.edgePadding = UIEdgeInsetsMake(10, 0, 0, 0);
@@ -40,12 +35,7 @@
 }
 
 
-- (void)minimalNotificationDidDismissNotification:(JFMinimalNotification*)notification {
-    NSLog(@"didDismissNotification");
-    if (notification != nil){
-        [notification removeFromSuperview];
-    }
-}
 
 
 @end
+

@@ -8,12 +8,25 @@
 
 #import "ViewController.h"
 #import "JFMinimalNotification.h"
+#import "DetailViewController.h"
+#import "DetailWithoutViewController.h"
 
 @interface ViewController () <JFMinimalNotificationDelegate, UITextFieldDelegate>
 @property (nonatomic, strong) JFMinimalNotification* minimalNotification;
 @end
 
 @implementation ViewController
+
+- (IBAction)withRemoveFromSuperVIew:(id)sender {
+    DetailViewController *d = [[DetailViewController alloc]init];
+    [self.navigationController pushViewController:d animated:true];
+}
+- (IBAction)withoutRemoveFromSuperview:(id)sender {
+    DetailWithoutViewController *d = [[DetailWithoutViewController alloc]init];
+    [self.navigationController pushViewController:d animated:true];
+
+
+}
 
 - (void)viewDidLoad
 {

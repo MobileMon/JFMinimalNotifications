@@ -28,6 +28,7 @@
 		3F0A97861735E4C500528BA7 /* JFMinimalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A97851735E4C500528BA7 /* JFMinimalNotification.m */; };
 		3FFDFDEC1AE5D4B80023D5FD /* JFMinimalNotificationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDFDEB1AE5D4B80023D5FD /* JFMinimalNotificationUITests.m */; };
 		3FFDFDED1AE5D7A60023D5FD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0A975D1735E3E700528BA7 /* CoreGraphics.framework */; };
+		78E71E56203B5FF30084FF56 /* DetailWithoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E71E4E203B5FF20084FF56 /* DetailWithoutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +127,8 @@
 		3FFDFDEB1AE5D4B80023D5FD /* JFMinimalNotificationUITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFMinimalNotificationUITests.m; sourceTree = "<group>"; };
 		3FFDFDEE1AE5D7D00023D5FD /* libTelephonyIOKitDynamic.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libTelephonyIOKitDynamic.dylib; path = usr/lib/libTelephonyIOKitDynamic.dylib; sourceTree = SDKROOT; };
 		3FFDFDF01AE5D8D40023D5FD /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
+		78E71E4E203B5FF20084FF56 /* DetailWithoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailWithoutViewController.m; sourceTree = "<group>"; };
+		78E71E55203B5FF20084FF56 /* DetailWithoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailWithoutViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +232,8 @@
 				19C95A5B1AF3B1B800590781 /* DetailViewController.m */,
 				3F0A97711735E3E700528BA7 /* MainStoryboard.storyboard */,
 				1996A5581C6D21DE00A0CF97 /* Launch Screen.storyboard */,
+				78E71E55203B5FF20084FF56 /* DetailWithoutViewController.h */,
+				78E71E4E203B5FF20084FF56 /* DetailWithoutViewController.m */,
 				3F0A97601735E3E700528BA7 /* Supporting Files */,
 			);
 			path = JFMinimalNotification;
@@ -447,6 +452,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78E71E56203B5FF30084FF56 /* DetailWithoutViewController.m in Sources */,
 				3F0A97661735E3E700528BA7 /* main.m in Sources */,
 				3F0A976A1735E3E700528BA7 /* AppDelegate.m in Sources */,
 				19C95A5C1AF3B1B800590781 /* DetailViewController.m in Sources */,
